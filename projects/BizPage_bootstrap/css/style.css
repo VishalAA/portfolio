@@ -1,0 +1,476 @@
+:root {
+    --green-color: #13a456;
+    --success-color: #18d26e;
+    --footer-bg: #111;
+    --border-after: #ddd;
+    --secondary: #333;
+    --footer-after: #555;
+    --form-shadow: 0 0 30px rgb(214 215 216 / 60%);
+    --overlay: rgba(0, 0, 0, 0.6);
+    --light: white;
+    --dark: black;
+    --overlay-light: rgba(255, 255, 255, 0.92);
+    --background: #f7f7f7;
+    --shadow: rgb(0 0 0 / 8%);
+    --shadow-hover: rgb(0 0 0 / 16%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins';
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.btn:hover {
+    background-color: var(--light) !important;
+    color: var(--success-color) !important;
+}
+.bg-green{
+    background-color:#18d26e !important;
+}
+.border-green{
+    border-color:#18d26e !important;
+}
+.text-success {
+    color: #18d26e !important;
+}
+.about-title h2::before,
+.about-title h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 1px;
+    background-color: var(--border-after);
+}
+
+.about-title h2::after {
+    bottom: -4%;
+    width: 40px;
+    height: 3px;
+    background-color: var(--success-color);
+}
+
+/* Header  */
+header {
+    z-index: 99;
+}
+
+.logo h1 a , .logo h2 a{
+    letter-spacing: 3px;
+    border-color: var(--success-color) !important;
+}
+
+nav ul li a {
+    font-size: 14px !important;
+}
+
+nav ul li a:hover,
+nav ul li a:hover i {
+    color: var(--success-color) !important;
+}
+
+.dropdown-list {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.dropdown-list ul li {
+    list-style: none;
+}
+
+.drop-down:hover .dropdown-list {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px) !important;
+}
+
+.dropdown-list {
+    width: 200px;
+}
+
+.sub_manu {
+    visibility: hidden;
+    opacity: 0;
+    width: 200px;
+    left: 104% !important;
+    top: 20%;
+    transform: translateX(-20px);
+}
+
+.sub-manu:hover .sub_manu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+/* Banner */
+.carousel-img img {
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+}
+
+.carousel-img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--overlay);
+}
+
+/* Feature Service  Start */
+.feature-service {
+    background-color: var(--dark);
+}
+
+.bg-gradial {
+    background: linear-gradient(#000000, #242323, #000000);
+}
+
+.feature-service-box a:hover {
+    color: var(--success-color) !important;
+}
+
+/* Feature Service End */
+/* About Start */
+.about::before,
+.about::after,
+.fact::before,
+.fact::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../images/about-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.about::after,
+.fact::after {
+    background-color: var(--overlay-light);
+    background-image: none !important;
+}
+
+.about-icon {
+    height: 64px;
+    width: 64px;
+    background-color: var(--success-color);
+}
+
+.about-icon i {
+    height: 100%;
+}
+
+.about-item {
+    box-shadow: 0px 2px 12px var(--shadow);
+}
+
+.about-item:hover .about-icon {
+    background-color: var(--light);
+}
+
+.about-item:hover .about-icon i {
+    color: var(--success-color) !important;
+}
+
+.about-body p {
+    color: var(--secondary);
+    line-height: 23px;
+}
+
+/* About End */
+/* Service  Start  */
+.service-content h5 {
+    cursor: pointer;
+}
+
+.service-content p,
+.about-body p,
+.portfolio-btn a,
+footer p,
+.foot-body a,
+.input-group a,
+.feature-service-box p {
+    font-size: 14px;
+}
+
+.s-box:hover h5 , .about-body h5:hover a , .contact-body a:hover{
+    color: var(--success-color) !important;
+}
+
+/* Service End */
+/* Call to Action Start  */
+.call {
+    background-image: url('../images/call-to-action-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.call-about-title a {
+    letter-spacing: 1px;
+    border: 2px solid var(--light);
+}
+
+.call-about-title a:hover {
+    color: var(--light) !important;
+    background-color: var(--success-color) !important;
+    border: 2px solid var(--success-color);
+}
+
+/* Call to Action End */
+/* Skill Start  */
+.progress {
+    height: 35px;
+}
+
+/* Skill End */
+/* Facts Start  */
+.fact::before {
+    background-image: url('../images/facts-bg.jpg');
+    height: 875px;
+}
+
+.fact::after {
+    height: 875px;
+}
+
+.fact-item h2 {
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.fact-item p {
+    font-size: 13px;
+}
+
+/* Fact End */
+/* Portfolio Start */
+.portfolio,
+.testimonial,
+.contact {
+    background: var(--background);
+}
+
+.portfolio-btn a {
+    color: var(--dark);
+    padding: 10px 20px;
+    background-color: var(--light);
+    border-radius: 5px;
+}
+
+.portfolio-btn a:hover,
+.hovered {
+    color: var(--light) !important;
+    background-color: var(--success-color) !important;
+}
+
+.port-body h5 a:hover {
+    color: var(--success-color) !important;
+}
+
+.port-item {
+    box-shadow: 0px 2px 12px var(--shadow);
+}
+
+.port-item:hover {
+    box-shadow: 0px 4px 14px var(--shadow-hover);
+}
+
+.port-overlay:hover {
+    opacity: 1 !important;
+}
+
+.port-overlay:hover .port-icon {
+    margin: 0px 10px;
+}
+
+.port-overlay {
+    background-color: var(--overlay);
+}
+
+.port-icon,
+.f-icon {
+    height: 36px;
+    width: 36px;
+    background-color: var(--light);
+}
+
+.port-icon:hover {
+    background-color: var(--success-color);
+}
+
+.port-icon:hover i {
+    color: var(--light) !important;
+}
+
+/* Potfolia End */
+/* Our Clients Start */
+.our-client img:hover {
+    opacity: 1 !important;
+}
+
+.our-client .carousel-indicators {
+    bottom: -70px;
+}
+.our-client .carousel-indicators button , .testimonial .carousel-indicators button{ 
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+/* Our Client End */
+/* Testimonial Start */
+.testimonial .carousel-indicators {
+    bottom: -15%;
+}
+
+/* Testimonial End */
+/* Team Start */
+.team-member-overlay {
+    background-color: var(--overlay);
+}
+
+.team-overlay-content i {
+    font-size: 13px;
+}
+
+.t-overlay-icons i:hover {
+    color: var(--success-color) !important;
+}
+
+.team-overlay-content {
+    transform: translateY(-20px);
+}
+
+.team-member-overlay:hover {
+    opacity: 1 !important;
+}
+
+.team-member-overlay:hover .team-overlay-content {
+    transform: translateY(0px);
+}
+
+/* Team End */
+/* Contact Start */
+.contact-body i {
+    font-size: 48px;
+}
+
+.phone {
+    height: 165px;
+}
+
+.contact-form {
+    box-shadow: var(--form-shadow);
+}
+
+.contact-form button,
+.input-group a {
+    background-color: var(--success-color) !important;
+    padding: 10px 25px;
+}
+
+.contact-form button:hover,
+.f-icon:hover,
+.input-group a:hover,
+.scroll-top {
+    color: var(--light) !important;
+    background-color: var(--green-color) !important;
+}
+
+/* Contact End */
+/* Footer Start */
+.footer-bg {
+    background-color: var(--footer-bg);
+}
+
+footer p,
+.foot-body a {
+    line-height: 25px;
+}
+
+.foot-about-title h6::before,
+.foot-about-title h6::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--footer-after);
+}
+
+.foot-about-title h6::after {
+    width: 20%;
+    background-color: var(--success-color);
+}
+
+.foot-body {
+    margin-top: 32px;
+}
+
+.foot-body p {
+    border-color: var(--secondary) !important;
+}
+
+.foot-body p a:hover {
+    color: var(--success-color) !important;
+}
+
+.f-icon {
+    background-color: var(--secondary);
+}
+
+.input-group a {
+    padding: 0 15px;
+}
+
+.last-p {
+    font-size: 13px;
+}
+.footer-2 {
+    background-color: var(--dark);
+}
+
+.dropdown-list,
+.sub_manu,
+.feature-service-box a,
+.about-icon,
+.service-content h5,
+.call-about-title a,
+.portfolio-btn a,
+.port-body h5 a,
+.port-item,
+.port-overlay,
+.port-icon,
+.port-icon i,
+.our-client img,
+.team-member-overlay,
+.team-overlay-content i,
+.team-overlay-content,
+.foot-body p a,
+.f-icon,
+.input-group a , .about-body h5 a , .contact-body a{
+    transition: all 0.2s linear;
+}
+
+/* Footer End */

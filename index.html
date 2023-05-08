@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" type="text/icon" href="images/favicon.png" />
+    <title>
+        Vishal
+    </title>
+    <!-- Fonts Awsome icon link -->
+    <link rel="stylesheet" href="css/all.min.css" type="text/css" />
+    <!-- Fancy box link-->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" type="text/css" />
+    <!-- font link -->
+    <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" />
+    <!-- Bootstrap Css link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <!-- Custome Css File  -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+    <main> 
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+      <div class="themes-setting position-fixed px-2 py-2">
+        <div class="settings d-inline">  <i class="fas fa-cog fa-spin"></i></div>
+       <ul class="switch-color mb-0 list-unstyled d-flex d-none py-3">
+        <li style="background-color: aqua;"></li>
+        <li style="background-color:blue;"></li>
+        <li style="background-color:blueviolet;"></li>
+        <li style="background-color: brown;"></li>
+       </ul>
+      </div> 
+     
+        <ul class="right-sidebar position-fixed end-0 top-50 translate-middle border-color mb-0  me-2 text-center py-4 px-3">
+                    <li><a href="#home" class="active bg-color"  data-bs-toggle="tooltip" data-bs-title="Home" data-bs-placement="left"><i class="fa-solid fa-house-user"></i></a> </li>
+                    <li><a href="#about" class="bg-color" data-bs-toggle="tooltip" data-bs-title="About" data-bs-placement="left"><i class="fa-solid fa-user"></i></a></li>
+                    <li><a href="#skill" class="bg-color" data-bs-toggle="tooltip" data-bs-title="Skill" data-bs-placement="left"><i class="fa-solid fa-file"></i></a></li>
+                    <li><a href="#portfolio" class="bg-color" data-bs-toggle="tooltip" data-bs-title="Portfolio" data-bs-placement="left"><i class="fa-solid fa-bars-staggered"></i></a></li>
+                    <li><a href="#education" class="bg-color" data-bs-toggle="tooltip" data-bs-title="Education" data-bs-placement="left"><i class="fa-solid fa-shapes"></i></a></li>
+                    <li><a href="#contact" class="bg-color" data-bs-toggle="tooltip" data-bs-title="Contact" data-bs-placement="left"><i class="fa-solid fa-comment"></i></a></li>
+                    
+        </ul>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+             
+            </div>
+            <div class="offcanvas-body d-flex  justify-content-center align-items-top">
+                <ul class="list-unstyled">
+                    <li><a href="#home" class="active"><i class="fa-solid fa-house-user me-2 fs-6"></i>Home</a> </li>
+                    <li><a href="#about"><i class="fa-solid fa-user me-2 fs-6"></i>About</a> </li>
+                    <li><a href="#skill"><i class="fa-solid fa-file me-2 fs-6"></i>Skill</a> </li>
+                    <li><a href="#portfolio"><i class="fa-solid fa-bars-staggered me-2 fs-6"></i>Portfolio</a> </li>
+                    <li><a href="#education"><i class="fa-solid fa-shapes me-2 fs-6"></i>Education</a> </li>
+                    <li><a href="#contact"><i class="fa-solid fa-comment me-2 fs-6"></i>Contact</a> </li>
+                </ul>
+                
+            </div>
+        </div>
+        <div class="responsive-leftsidebar">
+        <div class="left-sidebar border-color position-fixed start-0 top-0 ms-3 p-4 rounded-5 text-center">
+            <div class="heading">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h1 class="fw-bold mb-0">Vishal</h1>
+                    <span >Web Designer </span>
+                </div>
+            </div>
+            <div class="left-img">
+                <img src="images/meonly.jpg" alt="me"
+                    class="rounded-circle img-fluid px-4 py-auto my-3 w-100 " style="object-fit: cover;" />
+            </div>
+            <div class="text-center py-4">
+                <h4 class="fw-normal fs-5"><a href="#" class="text-white">vambolikar8488@gmail.com</a></h4>
+                <h4 class="mb-3 fw-normal">Web Page Creative</h4>
+              
+            </div>
+            <div class="social-media d-flex justify-content-center px-4">
+                <div class="mx-1"><a href="https://www.instagram.com/vambolikar/?igshid=NzMyMjgxZWIzNw%3D%3D" class="text-white"><i class="fa-brands fa-instagram"></i></a></div>
+                <div class="mx-1"><a href="https://www.freelancer.com/u/vambolikaribl" class="text-white"> <i class="fa-brands fa-twitter"></i></div></a>
+                <div class="mx-1"><a href="https://www.facebook.com/vishal.ambolikar.39" class="text-white"> <i class="fa-brands fa-facebook-f"></i></a></div>
+                <div class="mx-1"><a href="https://github.com/Vishal123456-git/EcoProject" class="text-white"><i class="fa-brands fa-github"></i></a></div>
+            </div>
+            <a href="projects/VishalAmbolikar-FrontEndDesigner.pdf" class="fs-6 btn btn-primary d-block mt-4 py-3"><i class="fa-regular fa-envelope me-2"></i>RESUME!</a>
+        </div>
+        </div>
+        <div class="toggle-bar position-absolute border-color" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    <!-- Home  -->
+    <section class="pt-5 pt-xl-0 pb-xl-5 home" id="home">
+        <div class="container">
+            <div class="dummy content-width">
+                   <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="title d-flex border-color py-2 px-4 align-items-center" >
+                                    <i class="fa-solid fa-house-user"></i> <span class="ms-2">HOME</span>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="row">
+                        <div class="col-12">
+                            <h1 class="display-2 my-5">
+                                Say Hi from <span class="text-color" >Vishal,</span> Front End Web <span id="changingText">Desiging</span>
+                            </h1> 
+                            <p class="w-75">I design and code beautifully simple things and i love what i do. Just simple like that!</p>   
+                        </div>
+                   </div>
+            </div>
+    
+        </div>
+    </section>
+    <!-- About -->
+    <section class="py-5 about" id="about">
+        <div class="container">
+            <div class="dummy content-width">
+                   <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="title d-flex border-color py-2 px-4 align-items-center" >
+                                    <i class="fa-solid fa-user"></i> <span class="ms-2">ABOUT</span>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="row">
+                        <div class="col-12">
+                            <h2 class="display-5 my-5">
+                                Every great design begin with
+                                an even better story
+                            </h2> 
+                            
+                        </div>
+                        <div class="col-12">
+                            <div class="row align-items-center">
+                                <div class="col-12">
+                                    <div class="row border-color p-2 rounded-3 shadow">
+                                        <div class="col-12 col-lg-4">
+                                            <div class="about-img overflow-hidden ">
+                                                <img src="images/meonly.jpg" class="fluid-img w-100 rounded-3" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-8">
+                                            <ul class="about-info mt-4 px-md-0 px-2 ">
+                                                <li class="d-flex justify-content-between"><span>Name :</span> <span>Vishal Ambolikar</span></li>
+                                                <li class="d-flex justify-content-between"><span>Age :</span> <span>22</span></li>
+                                                <li class="d-flex justify-content-between"><span>Address :</span> <span>Suda Sahakar Recedency</span></li>
+                                                <li class="d-flex justify-content-between"><span>Gender :</span> <span>Male</span></li>
+                                                <li class="d-flex justify-content-between"><span>Email :</span> <span>vambolikar.ibl@gmail.com</span></li>
+                                                <li class="d-flex justify-content-between"><span>Phone : </span> <span>+91 7698320894</span></li>
+                                                <li class="d-flex justify-content-between"><span>Degree : </span> <span>Bachelor</span></li>
+                                            </ul>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                   </div>
+            </div>
+    
+        </div>
+    </section>
+    <!-- skill -->
+    <section class="py-5 skill" id="skill">
+        <div class="container">
+            <div class="dummy content-width">
+                   <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="title d-flex border-color py-2 px-4 align-items-center" >
+                                    <i class="fa-solid fa-user"></i> <span class="ms-2">MY SKILLS</span>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="row">
+                        <div class="col-12">
+                            <h2 class="display-5 my-5">
+                                My <span class="text-color">Advantages</span>
+                            </h2> 
+                            <div class="row">
+                                <div class="col-6 col-sm-4 col-lg-3">
+                                    <div class="skill-item px-3 py-3">
+                                        <div class="skill-img py-5 rounded-5 border-color text-center">
+                                        <a href="#"> <img src="images/html.png" class="fluid-img " alt="html"> </a>
+                                        </div>
+                                        <h6 class="mt-4 text-center">HTML\HTML5</h6>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-lg-3">
+                                    <div class="skill-item px-3 py-3">
+                                        <div class="skill-img py-5 rounded-5 border-color text-center">
+                                            <a href="#"> <img src="images/css-3.png" class="fluid-img " alt="html"> </a>
+                                            </div>
+                                            <h6 class="mt-4 text-center">CSS\CSS3</h6>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-lg-3">
+                                    <div class="skill-item px-3 py-3">
+                                        <div class="skill-img py-5 rounded-5 border-color text-center">
+                                            <a href="#"> <img src="images/responsive-design.png" class="fluid-img " alt="html"> </a>
+                                            </div>
+                                            <h6 class="mt-4 text-center">RESPONSIVE DESIGN</h6>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-lg-3">
+                                    <div class="skill-item px-3 py-3">
+                                        <div class="skill-img py-5 rounded-5 border-color text-center">
+                                            <a href="#"> <img src="images/cloud-computing.png" class="fluid-img " alt="html"> </a>
+                                            </div>
+                                            <h6 class="mt-4 text-center">SASS\LESS</h6>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-lg-3">
+                                    <div class="skill-item px-3 py-3">
+                                        <div class="skill-img py-5 rounded-5 border-color text-center">
+                                            <a href="#"> <img src="images/bootstrap.png" class="fluid-img " alt="html"> </a>
+                                            </div>
+                                            <h6 class="mt-4 text-center">BOOTSTRAP</h6>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-lg-3">
+                                    <div class="skill-item px-3 py-3">
+                                        <div class="skill-img py-5 rounded-5 border-color text-center">
+                                            <a href="#"> <img src="images/js.png" class="fluid-img " alt="html"> </a>
+                                            </div>
+                                            <h6 class="mt-4 text-center">J-QUERY</h6>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-lg-3">
+                                    <div class="skill-item px-3 py-3">
+                                        <div class="skill-img py-5 rounded-5 border-color text-center">
+                                            <a href="#"> <img src="images/wordpress.png" class="fluid-img " alt="html"> </a>
+                                            </div>
+                                            <h6 class="mt-4 text-center">WORDPRESS</h6>
+                                    </div>
+                                </div>
+                            </div>    
+                           
+                        </div>
+                        <div class="col-12">
+                            <h2 class="display-5 my-5">
+                                Basic Skills
+                            </h2> 
+                            <div class="row">
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="skill-item pb-5">
+                                        <div class="skill-img py-2 rounded-3 border-color d-flex justify-content-center align-items-center px-2">
+                                        <a href="#"> <img src="images/word.png" class="fluid-img px-2" alt="html"> </a>
+                                        <span>Microsoft Word</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="skill-item pb-5">
+                                        <div class="skill-img py-2 rounded-3 border-color d-flex justify-content-center align-items-center px-2">
+                                        <a href="#"> <img src="images/excel.png" class="fluid-img px-2" alt="html"> </a>
+                                        <span>Microsoft Excel</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="skill-item pb-5">
+                                        <div class="skill-img py-2 rounded-3 border-color d-flex justify-content-center align-items-center px-2">
+                                        <a href="#"> <img src="images/powerpoint.png" class="fluid-img px-2" alt="html"> </a>
+                                        <span>Power Point</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="skill-item pb-5">
+                                        <div class="skill-img py-2 rounded-3 border-color d-flex justify-content-center align-items-center px-2">
+                                        <a href="#"> <img src="images/photoshop.png" class="fluid-img px-2" alt="html"> </a>
+                                        <span>Photoshop</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="skill-item pb-5">
+                                        <div class="skill-img py-2 rounded-3 border-color d-flex justify-content-center align-items-center px-2">
+                                        <a href="#"> <img src="images/paint-palette.png" class="fluid-img px-2" alt="html"> </a>
+                                        <span>Paint</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                           
+                        </div>
+                   </div>
+            </div>
+    
+        </div>
+    </section>
+    <!-- Portfolio -->
+    <section class="py-5 portfolio" id="portfolio">
+        <div class="container">
+            <div class="dummy content-width">
+                   <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="title d-flex border-color py-2 px-4 align-items-center" >
+                                    <i class="fa-solid fa-user"></i> <span class="ms-2">PORTFOLIO</span>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="row">
+                        <div class="col-12">
+                            <h2 class="display-5 my-5">
+                                My <span class="text-color">Projects </span>
+                            </h2> 
+                         
+                        </div>
+                   </div>
+                   <div class="row">
+                        <div class="col-12">
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                  <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">ALL</button>
+                                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">BOOTSTRAP</button>
+                                  <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">SASS/LESS</button>
+                                  <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-html" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">HTML/CSS</button>
+                                </div>
+                              </nav>
+                              <div class="tab-content my-5" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <div class="gallary-item overflow-hidden position-relative position-relative border-color p-3  rounded-3 mt-3">
+                                                <div class="gallary-img">
+                                                    <img src="images/project1.png" class="fluid-img w-100 rounded-3" alt="">
+                                                </div>
+                                                <div class="gallary-content position-absolute top-50 start-50 translate-middle d-flex p-3 ">
+                                                    <a href="projects/Unbrew_bootstrap2/index.html" class="border-color me-2 rounded-5 text-center " target="_blank"><i class="fa-solid fa-plus"></i></a>
+                                                    <a href="images/project1.png" class="border-color ms-2 rounded-5 text-center" data-fancybox="group"><i class="fa-solid fa-eye"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <div class="gallary-item overflow-hidden position-relative  border-color  p-3 rounded-3 mt-3">
+                                                <div class="gallary-img">
+                                                    <img src="images/project2.png" class="fluid-img  w-100 rounded-3" alt="">
+                                                </div>
+                                                <div class="gallary-content  position-absolute top-50 start-50 translate-middle d-flex justify-content-between p-3">
+                                                    <a href="projects/bootstrap1/index.html" class="border-color me-2 rounded-5 text-center " target="_blank"><i class="fa-solid fa-plus"></i></a>
+                                                    <a href="images/project2.png" class="border-color ms-2 rounded-5 text-center " data-fancybox="group"><i class="fa-solid fa-eye"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <div class="gallary-item overflow-hidden position-relative  border-color  p-3 rounded-3 mt-3">
+                                                <div class="gallary-img">
+                                                    <img src="images/project3.png" class="fluid-img  w-100 rounded-3" alt="">
+                                                </div>
+                                                <div class="gallary-content  position-absolute top-50 start-50 translate-middle d-flex justify-content-between p-3">
+                                                    <a href="projects/jquery/index.html" class="border-color me-2 rounded-5 text-center " target="_blank"><i class="fa-solid fa-plus"></i></a>
+                                                    <a href="images/project3.png" class="border-color ms-2 rounded-5 text-center " data-fancybox="group"><i class="fa-solid fa-eye"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <div class="gallary-item overflow-hidden position-relative  border-color p-3 rounded-3 mt-3">
+                                                <div class="gallary-img">
+                                                    <img src="images/project4.png" class="fluid-img  w-100 rounded-3" alt="">
+                                                </div>
+                                                <div class="gallary-content  position-absolute top-50 start-50 translate-middle d-flex justify-content-between p-3">
+                                                    <a href="projects/sass_project/index.html" class="border-color me-2 rounded-5 text-center " target="_blank"><i class="fa-solid fa-plus"></i></a>
+                                                    <a href="images/project4.png" class="border-color ms-2 rounded-5 text-center " data-fancybox="group"><i class="fa-solid fa-eye"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <div class="gallary-item overflow-hidden position-relative  border-color p-3 rounded-3 mt-3">
+                                                <div class="gallary-img">
+                                                    <img src="images/project5.png" class="fluid-img  w-100 rounded-3" alt="">
+                                                </div>
+                                                <div class="gallary-content  position-absolute top-50 start-50 translate-middle d-flex justify-content-between p-3">
+                                                    <a href="projects/BizPage_bootstrap/index.html" class="border-color me-2 rounded-5 text-center " target="_blank"><i class="fa-solid fa-plus"></i></a>
+                                                    <a href="images/project5.png" class="border-color ms-2 rounded-5 text-center " data-fancybox="group"><i class="fa-solid fa-eye"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <div class="gallary-item overflow-hidden position-relative  border-color p-3 rounded-3 mt-3">
+                                                <div class="gallary-img">
+                                                    <img src="images/project6.png" class="fluid-img  w-100 rounded-3" alt="">
+                                                </div>
+                                                <div class="gallary-content  position-absolute top-50 start-50 translate-middle d-flex justify-content-between p-3">
+                                                    <a href="projects/window_cleaner-bootstrap/index.html" class="border-color me-2 rounded-5 text-center " target="_blank"><i class="fa-solid fa-plus"></i></a>
+                                                    <a href="images/project6.png" class="border-color ms-2 rounded-5 text-center " data-fancybox="group"><i class="fa-solid fa-eye"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <div class="gallary-item overflow-hidden position-relative position-relative border-color p-3  rounded-3 mt-3">
+                                                <div class="gallary-img">
+                                                    <img src="images/project1.png" class="fluid-img w-100 rounded-3" alt="">
+                                                </div>
+                                                <div class="gallary-content position-absolute top-50 start-50 translate-middle d-flex p-3 ">
+                                                    <a href="projects/Unbrew_bootstrap2/index.html" class="border-color me-2 rounded-5 text-center " target="_blank"><i class="fa-solid fa-plus"></i></a>
+                                                    <a href="images/project1.png" class="border-color ms-2 rounded-5 text-center" data-fancybox="group"><i class="fa-solid fa-eye"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <div class="gallary-item overflow-hidden position-relative  border-color  p-3 rounded-3 mt-3">
+                                                <div class="gallary-img">
+                                                    <img src="images/project2.png" class="fluid-img  w-100 rounded-3" alt="">
+                                                </div>
+                                                <div class="gallary-content  position-absolute top-50 start-50 translate-middle d-flex justify-content-between p-3">
+                                                    <a href="projects/bootstrap1/index.html" class="border-color me-2 rounded-5 text-center " target="_blank"><i class="fa-solid fa-plus"></i></a>
+                                                    <a href="images/project2.png" class="border-color ms-2 rounded-5 text-center " data-fancybox="group"><i class="fa-solid fa-eye"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <div class="gallary-item overflow-hidden position-relative  border-color p-3 rounded-3 mt-3">
+                                                <div class="gallary-img">
+                                                    <img src="images/project4.png" class="fluid-img  w-100 rounded-3" alt="">
+                                                </div>
+                                                <div class="gallary-content  position-absolute top-50 start-50 translate-middle d-flex justify-content-between p-3">
+                                                    <a href="projects/sass_project/index.html" class="border-color me-2 rounded-5 text-center " target="_blank"><i class="fa-solid fa-plus"></i></a>
+                                                    <a href="images/project4.png" class="border-color ms-2 rounded-5 text-center " data-fancybox="group"><i class="fa-solid fa-eye"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-html" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <div class="gallary-item overflow-hidden position-relative  border-color p-3 rounded-3 mt-3">
+                                                <div class="gallary-img">
+                                                    <img src="images/project5.png" class="fluid-img  w-100 rounded-3" alt="">
+                                                </div>
+                                                <div class="gallary-content  position-absolute top-50 start-50 translate-middle d-flex justify-content-between p-3">
+                                                    <a href="projects/BizPage_bootstrap/index.html" class="border-color me-2 rounded-5 text-center " target="_blank"><i class="fa-solid fa-plus"></i></a>
+                                                    <a href="images/project5.png" class="border-color ms-2 rounded-5 text-center " data-fancybox="group"><i class="fa-solid fa-eye"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <div class="gallary-item overflow-hidden position-relative  border-color  p-3 rounded-3 mt-3">
+                                                <div class="gallary-img">
+                                                    <img src="images/project3.png" class="fluid-img  w-100 rounded-3" alt="">
+                                                </div>
+                                                <div class="gallary-content  position-absolute top-50 start-50 translate-middle d-flex justify-content-between p-3">
+                                                    <a href="projects/jquery/index.html" class="border-color me-2 rounded-5 text-center " target="_blank"><i class="fa-solid fa-plus"></i></a>
+                                                    <a href="images/project3.png" class="border-color ms-2 rounded-5 text-center " data-fancybox="group"><i class="fa-solid fa-eye"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                      
+                   </div>
+            </div>
+    
+        </div>
+    </section>
+     <!-- Education -->
+     <section class="py-5 education" id="education">
+        <div class="container">
+            <div class="dummy content-width">
+                   <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="title d-flex border-color py-2 px-4 align-items-center" >
+                                    <i class="fa-solid fa-user"></i> <span class="ms-2">EDUCATION</span>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="row">
+                        <div class="col-12">
+                            <h2 class="display-5 my-5">
+                                My <span class="text-color">Education </span>
+                            </h2> 
+                         
+                        </div>
+                   </div>
+                   <div class="row">
+                        <div class="col-12 col-sm-6">
+                           <div class="education-items position-relative ps-5 pb-5 mb-5">
+                                <span class="bg-color">2023 - Present</span>
+                                <h4 class="fw-normal mt-4">Front End Web Coding</h4>
+                                <p class="bg-color">Red & White Institude</p>
+                           </div>
+                           <div class="education-items position-relative ps-5 pb-5 mb-5">
+                            <span class="bg-color">2017 </span>
+                            <h4 class="fw-normal mt-4">HSC</h4>
+                            <p class="bg-color">Sadashiv Bheesan Mahale</p>
+                       </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                           
+                            <div class="education-items position-relative  ps-5 pb-5 mb-5">
+                                <span class="bg-color">2019 - 2020 </span>
+                                <h4 class="fw-normal mt-4">Degree (Bachelor)</h4>
+                                <p class="bg-color">Udhna Citizen</p>
+                            </div>
+                            <div class="education-items position-relative ps-5 pb-5 mb-5">
+                                <span class="bg-color">2015 </span>
+                                <h4 class="fw-normal mt-4">SSC</h4>
+                                <p class="bg-color">Sarvo Janik High School</p>
+                           </div>
+                           
+                         </div>
+                      
+                   </div>
+            </div>
+    
+        </div>
+    </section>
+    <!-- Contact -->
+    <section class="py-5 contact" id="contact">
+        <div class="container">
+            <div class="dummy content-width">
+                   <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="title d-flex border-color py-2 px-4 align-items-center" >
+                                    <i class="fa-solid fa-user"></i> <span class="ms-2">CONTACT</span>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="row">
+                        <div class="col-12">
+                            <h2 class="display-5 my-5">
+                                Let's Work <span class="text-color">Together! </span>
+                            </h2> 
+                              <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">FULL NAME</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Full Name">
+                                      </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">FULL NAME</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Full Name">
+                                      </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">PHONE (OPTIONAL)</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Phone Number">
+                                      </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">SUBJECT</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Subject">
+                                      </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">MESSAGE</label>
+                                        <textarea name="" id="" class="form-control" cols="30" rows="10" placeholder="Message"></textarea>
+                                      </div>
+                                </div>
+                                <div class="col-12">
+                                 <a href="javascript:void(0)" class="fs-6 btn btn-primary  mt-5 py-3 px-5">SUBMIT</a>
+
+                                </div>
+                              </div>
+                             
+                        </div>
+                   </div>
+            </div>
+    
+        </div>
+    </section>
+    <!-- J-query Link -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+      <!-- Bootstrapn Js Link -->
+      <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+      <!-- Fancy box link -->
+      <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+      <!-- Custome Js -->
+      <script type="text/javascript" src="js/custome.js"></script>
+  
+    <!-- Font Awesome icon link -->
+    <script type="text/javascript" src="js/all.min.js"></script>
+</main>
+</body>
+
+</html>

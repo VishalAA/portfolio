@@ -1,0 +1,300 @@
+:root{
+    --white-color:white;
+    --menu-hover-color:#fff;
+    --black-color:black;
+    --overlay:#000000;
+    --primary-bg:#1fb6fc;
+    --secondary-bg:#bc6ff1;
+    --social-font:#a641ec ;
+    --title-section:#1fb6fc;
+    --evently-color:#f9faff;
+    --footer-top:#0d6efd;
+    --footer-bg:#eaedff;
+    --work-box-bg:#e8f8ff;
+    --work-brand-bg:#84d7fd;
+    --team-box-bg:#f9f1fe;
+    --menu-text-color:rgba(255, 255, 255, 0.9);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8 !important;
+}
+header{
+    z-index: 9999 !important;
+}
+.btn-primary{
+    background: var(--primary-bg) !important;
+}
+.btn-secondary{
+    background: var(--secondary-bg) !important;
+}
+.text-white-75{
+    color:var(--menu-text-color) !important;
+}
+.social-icon-font{
+    color:var(--social-font) !important;
+}
+.fs-10{
+    font-size:10px;
+}
+.fs-12{
+    font-size: 12px;
+}
+.title-text , footer ul li:hover a , footer .footer-content h6:hover , footer ul li:hover i {
+    color:var(--title-section) !important;
+}
+.title{
+    word-spacing: 2px;  
+    letter-spacing: 2px;
+}
+.work-brand-bg{
+    background-color: var(--evently-color) !important;
+}
+.fw-400{
+    font-weight: 400 !important;
+}
+.fw-500{
+    font-weight: 500 !important;
+}
+.space{
+    padding: 6em 0;
+}
+.default-btn{
+    padding:10px 20px;
+    border-radius: 40px 40px 40px 0px;
+    transition: all 0.3s ease;
+    border:none;
+}
+.default-btn:hover{
+    border-radius: 0px 40px 40px 40px !important;
+}
+header ul li a{
+    position: relative;
+}
+header ul li .active::after {
+    visibility: visible;
+    opacity: 1;
+    background-color: #fff;
+    transform: scaleX(1);
+}
+header ul li a::after{
+    content: "";
+    position: absolute;
+    top:90%;
+    bottom:0;
+    left:8px;
+    right:8px;
+    height:2px;
+    background-color: #eaedff;
+    visibility: hidden;
+    opacity: 0;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+}
+header ul li:hover a::after{
+    visibility: visible ;
+    opacity: 1;
+    transform: scaleX(1);
+}
+/* Banner Start */
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .1;
+    background:var(--overlay) ;
+}
+.banner{
+    height:800px;
+    background: linear-gradient(45deg, #553be6 0%, #a87ffa 100%);
+    overflow: hidden;
+}
+.banner::after{
+    position: absolute;
+    content: "";
+    top:-150px;
+    left:-200px;
+    height:550px;
+    width:550px;
+    border-radius: 50%;
+    background: var(--white-color);
+    opacity: .05;
+}
+.banner::before{
+    position: absolute;
+    bottom: -90px;
+    left: 0;
+    width: 40%;
+    height: 180px;
+    content: '';
+    background-color: #000000 !important;
+    opacity: .05;
+    border-radius: 0 50% 50% 0;
+}
+.navbar-nav li a , .fs-14{
+    font-size: 14px !important;
+}
+.social-icon i:hover , .team-icon i:hover{
+    background-color: var(--primary-bg) !important;
+    color:var(--white-color) !important;
+}
+/* Banner End */
+/* Our Service Start */
+.service-shadow{
+    box-shadow: 0px 24px 48px -13px rgb(0 0 0 / 5%) !important;
+}
+.w-20{
+    width: 20% !important;
+}
+.counter-img::after{
+    position: absolute;
+    content: "";
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color: #2a3a60;
+    opacity: .5;
+}
+.service-box , .mang-box{
+    overflow: hidden;
+    transition: all 0.3s ease;
+    z-index: 0;
+}
+.service-box:hover p , .service-box:hover h6 , .mang-box:hover h4 , .mang-box:hover p{
+    color:var(--white-color) !important;
+}
+.service-box:hover , .mang-box:hover{
+    background-color: var(--primary-bg) !important;
+}
+ .service-box:hover::after , .mang-box:hover::after{
+    visibility: visible !important;
+    opacity: 0.2;
+    top:70%;
+}
+.service-box::after , .mang-box::after{
+    position: absolute;
+    content: "";
+    height:100%;
+    width:100%;
+    left:0;
+    top:100%;
+    z-index: -1;
+    box-sizing: border-box;
+    transform: rotate(50deg);
+    background-color:var(--evently-color);
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+/* Our Service End */
+/* Team Start */
+.team-box .team-content , .team-icon{
+transition: all 0.3s ease;
+}
+.team-box:hover .team-content , .team-icon i{
+   background-color: var(--team-box-bg);
+}
+.team-icon{
+    visibility: hidden;
+    opacity: 0;
+}
+.team-box:hover .team-icon{
+    visibility: visible;
+    opacity: 1;
+}
+/* Team End */
+/* Management Start */
+.managment-overlay{
+    top:0;
+    left:0;
+    height:600px;
+    width: 100%;
+    background: linear-gradient(45deg, #553be6 0%, #a87ffa 100%);
+} 
+
+/* Management End */
+/* Portfolio Start */
+.work-box .work-content , .work-content span{
+    transition: all 0.3s ease;
+} 
+.work-box:hover .work-content{
+background-color: var(--work-box-bg) !important;
+}
+.work-box:hover .work-content span{
+    background-color: var(--work-brand-bg) !important;
+    color:var(--white-color) !important;
+}
+/* Portfolio End */
+/* Testimonial Start */
+.carousel-indicators button{
+    height:8px !important;
+    width:8px !important;
+    background-color: var(--primary-bg) !important;
+}
+/* Testimonial End */
+/* Pricing Start */
+.team-content ul li:nth-child(even) , .team-content span{
+    background-color:var( --evently-color) ;
+}
+/* Pricing End */
+/* Footer Top Start */
+.footer-top{
+background-color: var(--footer-top) !important;
+}
+.footer-top input{
+    border:none !important;
+    background: none !important;
+    color:var(--evently-color);
+    border-bottom: 1px solid var(--evently-color) !important;
+}
+.footer-top ::placeholder{
+    color:var(--evently-color) !important;
+}
+/* Footer Top End */
+/* Footer Start */
+footer{
+    background: var(--footer-bg) !important;
+    overflow: hidden;
+    z-index: 0;
+}
+footer::after{
+    position: absolute;
+    top: -250px;
+    left: -200px;
+    width: 700px;
+    height: 500px;
+    border-radius: 50%;
+    z-index: -1;
+    content: '';
+    background: #e5e9ff !important;
+}
+footer::before{
+    position: absolute;
+    bottom: -350px !important;
+    right: -200px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    z-index: -1;
+    content: '';
+    background: #e5e9ff !important;
+}
+.social-media i , .social-icon i , .team-icon i{
+    height:35px;
+    width:35px;
+    line-height: 35px;
+    border-color: var(--title-section) !important;
+    transition: all 0.3s ease ;
+}
+.bottom-footer{
+    background: linear-gradient(45deg, #553be6 0%, #a87ffa 100%) !important;
+}
+
+/* Footer End */

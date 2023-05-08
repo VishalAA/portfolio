@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/* Header */
+nav ul li{
+    margin:0 5px;
+}
+nav ul li a{
+    padding:8px 10px;
+    color:white;
+}
+.social-media i{
+    margin:0 5px;
+    font-size: 20px;
+}
+
+/* Banner */
+.banner{
+    background:linear-gradient(rgba(0,83,156,1),rgba(0,83,156,.9),rgba(0,83,156,1)),url("../images/header.jpg");
+}
+.form input , .form textarea , .form {
+    background-color: rgba(255,255,255,.3);
+}
+::placeholder{
+    color:rgba(255, 255, 255, 0.76) !important;
+}
+/* Team */
+
+ .img-team{
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    top:-50%;
+    left: 0;
+}
+.team-content{
+    padding:150px 20px 30px 30px;
+    margin-top: -130px;
+} 
+.social-media-team i{
+    height:30px;
+    width:30px;
+    background-color: blue;
+    line-height: 30px;
+    color:white;
+    text-align: center;
+}
+/* Choose */
+.accordion{
+    border-top:1px solid gray;
+}
+.accordion-item{
+    border-bottom:1px solid gray !important;
+    border:none;
+    border-radius:none;
+}
+/* plan */
+.plan-content {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.plan-content ul li{
+    padding:3px 0px;
+}
+/*  */
+.form-div input{
+    height:60px;
+}
+.form-div ::placeholder{
+    color:black !important;
+    padding-left:20px;
+}
+.form-div button{
+    top:5px;
+    right:5px;
+    height:50px;
+}
+/* footer  */
+.footer-items ul li a{
+    color:white !important;
+}
